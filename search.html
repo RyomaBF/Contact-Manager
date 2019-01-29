@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Search Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  }
+
+  body {
+  background-color: lightblue;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#">Contact List</a>
+  <a href="#">Search Contact</a>
+  <a href="#">Add Contact</a>
+  <a href="#">Group List</a>
+  <input type="submit" value="Logout">
+</div>
+
+<div class="content">
+  <h1>Search Contact</h1>
+  <form>
+  	Search by:<br>
+ <select>
+  <option value="empty"> </option>	
+  <option value="firstname">First Name</option>
+  <option value="lastname">Last Name</option>
+  <option value="phonenumber">Phone Number</option>
+  <option value="email">E-mail</option>
+  <option value="address1">Address 1</option>
+  <option value="address2">Address 2</option>
+  <option value="dateofbirth">Date of Birth</option>
+</select>
+  <input type="text" name="search"><br>
+  
+  <input type="submit" value="Search">
+  </form>
+</div>
+
+</body>
+</html>
